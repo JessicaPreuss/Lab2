@@ -44,7 +44,7 @@ button {
     margin-left: 10px;
     font-size: small;
 }
-.bottomNavigation {
+footer {
     background: rgba(247, 193, 162, 0.7);
     height: 35px; 
     position: fixed;
@@ -61,10 +61,10 @@ button {
     color: #000;
     font-weight: bold;
 }
-#bottomNavigationLeft {
+.bottomNavigationLeft {
     display: flex;
-    align-self: flex-end;
-    justify-content:space-evenly; 
+    flex-direction: row;
+    justify-content: flex-end; 
 }
 @media screen and (min-width: 768px) {
     .navigation {
@@ -77,5 +77,8 @@ button {
         width: 100%;
         height: 35px;
     } 
+    #topNavigation {
+        justify-content:space-around;
+    }
 }    
 }
