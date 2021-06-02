@@ -2,19 +2,23 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #f9fafc;
     position: relative;
+    margin: 5px 10px 5px 15px;
 }
 .navigation {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     color: #69696a;
+    font-size: small;
 }
-.topChirpus{
+#topChirpus{
     font-weight: bold;
     color: #000;
 }
 a {
     text-decoration: none;  
 }
+
 button {
     color: #fff;
     background: #000;
@@ -26,6 +30,7 @@ button {
     justify-content: center;
     border: solid;
     border-radius: 20px;
+    height: 25px;
 }
 #bodyChirpus {
     font-size: x-large;
@@ -36,7 +41,8 @@ button {
     border-left-color:#69696a;
     padding-left: 16px;
     border-left-width: 5px;
-    margin-left: 16px;
+    margin-left: 10px;
+    font-size: small;
 }
 .bottomNavigation {
     display: flex;
