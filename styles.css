@@ -45,12 +45,37 @@ button {
     font-size: small;
 }
 .bottomNavigation {
-    display: flex;
-    flex-direction:row;
     background: rgba(247, 193, 162, 0.7);
-    height: 40px; 
+    height: 35px; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    font-size: small;
 }
 #bottomChirpus {
     display: flex;
-    justify-content:flex-start;
+    align-self: flex-start;
+    color: #000;
+    font-weight: bold;
+}
+#bottomNavigationLeft {
+    display: flex;
+    align-self: flex-end;
+    justify-content:space-evenly; 
+}
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color: #69696a;
+        font-size: small;
+        align-items:baseline;
+        width: 100%;
+        height: 35px;
+    } 
+}    
 }
